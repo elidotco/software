@@ -1,7 +1,13 @@
 import React from 'react';
+import './App.css';
+import Register from './pages/Register/Register';
 
 const App = () => {
-  return <div>Hello World</div>;
+  return (
+    <main>
+      <Register />
+    </main>
+  );
 };
 
 export default App;
