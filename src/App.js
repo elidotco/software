@@ -1,11 +1,14 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
-import Register from './pages/Register/Register';
+import Login from './pages/login/Login';
 
 const App = () => {
   return (
     <main>
-      <Register />
+      <Router>
+        <Login />
+      </Router>
     </main>
   );
 };

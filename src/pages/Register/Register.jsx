@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { FiEye, FiEyeOff } from 'react-icons/fi';
 import Button from '../../components/Button';
-import './Register.scss';
 
+import './Register.scss';
 const Register = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
