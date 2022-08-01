@@ -1,13 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
-import Login from './pages/login/Login';
-
+import Sidebar from './components/Sidebar';
 const App = () => {
   return (
     <main>
       <Router>
-        <Login />
+        <Sidebar />
       </Router>
     </main>
   );
