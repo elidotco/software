@@ -11,7 +11,7 @@ import './components.scss';
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="sidebar ">
+    <div className={isOpen ? 'sidebar open' : 'sidebar '}>
       <div className="sidebar_header">
         <FiUser />
         <h3>Admin</h3>
@@ -26,7 +26,11 @@ const Sidebar = () => {
           <FcMenu />
         </span>
       </div>
-      <div className="sidebar-item_container ">
+      <div
+        className={
+          isOpen ? 'sidebar-item_container open' : 'sidebar-item_container '
+        }
+      >
         <div className="form">
           <form action="">
             <label htmlFor="text">
@@ -35,7 +39,7 @@ const Sidebar = () => {
             <input type="text" placeholder="Search" />
           </form>
         </div>
-        <ul className="sidebar-items ">
+        <ul className={isOpen ? 'sidebar-items open ' : 'sidebar-items '}>
           <li className="sidebar-items_item">
             <a href="/dashboard">
               <span className="icon">

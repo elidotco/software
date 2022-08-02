@@ -118,7 +118,7 @@
                     width: 100%;
                     display: flex;
                     justify-content: center;
-                    padding-left: 1rem;
+                padding-left: 2rem;
 
                      input{
                         display: flex;
@@ -128,9 +128,54 @@
                         margin-left:auto;
                         font-size: 1rem;
                     }
+                    label{
+                        display: flex;
+                        margin-left:auto;
+                    width: 
+                    50px;
+                    height: 50px;
+                    
+                    background: transparent;
+                    padding-right: 1rem;
+                    }
+                }
+
+                &:hover{
+                    margin-left: 0;
+                    padding-left: 0;
+
+                    
+
                 }
                }
 
+               .sidebar-footer{
+                width: 100%;
+                ul{
+                    width: 100%;
+                    li{
+                        padding-left: 0
+                        ;
+                        font-size: 20px;
+                        a{
+                            .text{
+                                display: block;
+                                padding-left: 1rem;
+                                padding-top: 6px;
+                                padding-left: 15px;
+                            }
+                        }
+
+                        &:hover{
+                            cursor: pointer;
+                            transition: 0;
+                            background-color: red;
+                            
+                        }
+                    }
+                }
+
+            }
 
                
         }
@@ -151,14 +196,28 @@
 
 
                 li{
+                    transition: 1.5s;
 
                     a{
                         .text{
                             display: flex;
                             font-size: 20px;
+                            padding-top: 6px;
+                            padding-left: 15px;
+                            text-transform: capitalize;
+
                         }
                     }
                    
+                    &:hover{
+                        ul{
+                            left: 4.5rem;
+                            top: 0;
+                            transition: 1.5s;
+                            opacity: 1;
+                        }
+                        
+                    }
                 }
                 
               
@@ -189,7 +248,7 @@
                 align-items: center;
                 display: flex;
                 justify-content: flex-start;
-                
+                border: 1px solid green;
                 
                 
                 
@@ -263,11 +322,12 @@
                   
                     ul{
                         display:flex;
+                        ;
                         justify-content: left;
 
 
-                        bottom: -2.5rem;
-                        left: -6.3rem;
+                        bottom: -2.3rem;
+                        left: -6.5rem;
                         
                         background: #2C2C2C;
                         width: 200px;
@@ -289,13 +349,7 @@
                         
                        
                         
-                        li{
-                            list-style-type: armenian;
-                            font-size: 20px;
-                            &:hover{
-                                width: fit-content;
-                            }
-                        }
+                       
 
                         
                     }
@@ -316,57 +370,6 @@
 
 
 
-.form{
-    
-    margin-top:0rem;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    border-radius: 5px;
-    font-size: 25px;
-    background: #333333;
-    &:hover{
-        width: 250px;
-        margin-top: 0;
-        margin-left: 10rem;
-        position: relative;
-        top: 0;
-
-        form{
-            
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            padding-left: 1rem;
-
-             input{
-                display: flex;
-                outline: none;
-                border: none;
-                background: transparent;
-                margin-left:auto;
-                font-size: 1rem;
-            }
-        }
-       }
-       
-    
-    
-
-    form{
-        color: #9E9E9E;
-
-      
-
-
-        input{
-            display: none;
-            
-        }
-    }
-}
 
 
 .menu-icon{
@@ -409,4 +412,50 @@
 }
 .grIcon:hover path{
     stroke: #00acc1;
+}
+
+
+.form{
+    border: 1px solid green;
+
+
+   form{
+    color: #9E9E9E;
+    width: 100%;
+    display: flex;
+    label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: #333333; 
+
+    }
+
+
+    input{
+    display: none;
+   
+    }
+   
+   }
+
+   &:hover{
+    cursor: pointer;
+    background: #333333;
+    width: 250px;
+    margin-left: 13rem;
+    input{
+        display: flex;
+        width: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        color: #9E9E9E;
+    }
+    
+   
+}
 }
