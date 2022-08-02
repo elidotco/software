@@ -238,33 +238,56 @@
 
                 &:hover{
                 
-                    width: 250px;
+                    width: 225px;
                     background: #2C2C2C;
+    
                 
-                    
+                  a{
+                    color: #00acc1;
+                    .text{
+                        display:flex;
+                        align-items: center;
+                        padding-left: 1rem;
+                        font-size: 1.2rem;
+                        text-transform: capitalize;
+                    }
+                    .icon{
+                    color: #00acc1;
+                    }
+                  }  
                     
                   
                     
                 
 
-                    .text{
-                        display:flex;
-                        align-items: center;
-                        padding-left: 1rem;
-                    }
+                  
                     ul{
-                        display:block;
-                        transition: .5s;
-                        
-                        
-                        padding: 2rem;
+                        display:flex;
+                        justify-content: left;
+
+
                         bottom: -2.5rem;
-                        left: -8.3rem;
+                        left: -6.3rem;
                         
                         background: #2C2C2C;
                         width: 200px;
                         list-style-type: circle;
                         position: relative;
+                        transition: .5s;
+                        padding: 2rem;
+                        
+                        
+                        
+                        li{
+                            &:hover{
+                                width: fit-content;
+                            }
+                        }
+                        
+                        
+                        
+                        
+                       
                         
                         li{
                             list-style-type: armenian;
@@ -294,7 +317,7 @@
 
 
 .form{
-    width: 40px;
+    
     margin-top:0rem;
     height: 40px;
     display: flex;
@@ -304,13 +327,38 @@
     border-radius: 5px;
     font-size: 25px;
     background: #333333;
-    
+    &:hover{
+        width: 250px;
+        margin-top: 0;
+        margin-left: 10rem;
+        position: relative;
+        top: 0;
+
+        form{
+            
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-left: 1rem;
+
+             input{
+                display: flex;
+                outline: none;
+                border: none;
+                background: transparent;
+                margin-left:auto;
+                font-size: 1rem;
+            }
+        }
+       }
        
     
     
 
     form{
         color: #9E9E9E;
+
+      
 
 
         input{
@@ -358,4 +406,7 @@
 
 .grIcon path{
     stroke: #9E9E9E;
+}
+.grIcon:hover path{
+    stroke: #00acc1;
 }
