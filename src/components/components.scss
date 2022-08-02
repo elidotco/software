@@ -23,7 +23,7 @@
 .sidebar{
     width: 80px;
     height: 100vh;
-    border: 1px solid red;
+    
     color:  #2C2C2C;
     background:#2C2C2C;
     color: #9E9E9E;
@@ -83,10 +83,7 @@
         justify-content:center;
         transition: 5s;
         &:hover{
-            cursor: pointer;
             transition: 3s;
-            background-color: red;
-            transition-delay: 3s;
         }
 
         h3{
@@ -102,7 +99,7 @@
     &-item_container{
         width: 100%;
         height: 100vh;
-        border: 2px rebeccapurple solid;
+        
         justify-content: center;
         padding-top: 0;
         &.open{
@@ -169,7 +166,7 @@
                         &:hover{
                             cursor: pointer;
                             transition: 0;
-                            background-color: red;
+                        
                             
                         }
                     }
@@ -190,7 +187,7 @@
 
             &.open{
                 width: 250px;
-                border: 2px solid green;
+        
                 justify-content: flex-start;
                 padding: 1rem 1rem;
 
@@ -211,7 +208,7 @@
                    
                     &:hover{
                         ul{
-                            left: 4.5rem;
+                            left: 4.6rem;
                             top: 0;
                             transition: 1.5s;
                             opacity: 1;
@@ -236,7 +233,7 @@
             display: flex;
     
             flex-direction: column;
-            border: 1px solid red;
+        
         
             width: 50px;
             justify-content: center;
@@ -248,7 +245,7 @@
                 align-items: center;
                 display: flex;
                 justify-content: flex-start;
-                border: 1px solid green;
+                
                 
                 
                 
